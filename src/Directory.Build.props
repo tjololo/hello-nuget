@@ -6,5 +6,6 @@
   </ItemGroup>
   <PropertyGroup>
     <MinVerMinimumMajorMinor>0.1</MinVerMinimumMajorMinor>
+    <MinVerDefaultPreReleasePhase>alpha</MinVerDefaultPreReleasePhase>
   </PropertyGroup>
 </Project>
