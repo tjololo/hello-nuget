@@ -4,4 +4,7 @@
   <ItemGroup>
     <PackageReference Include="MinVer" Version="4.0.0" PrivateAssets="All" />
   </ItemGroup>
+  <PropertyGroup>
+    <MinVerMinimumMajorMinor>0.1</MinVerMinimumMajorMinor>
+  </PropertyGroup>
 </Project>
