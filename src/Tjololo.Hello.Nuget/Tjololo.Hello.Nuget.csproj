@@ -6,5 +6,12 @@
     <Nullable>enable</Nullable>
     <PackageId>Tjololo.Hello.Nuget</PackageId>
     <Authors>tjololo</Authors>
+    <OutputType>Library</OutputType>
+    <PackageReleaseNotes>https://github.com/tjololo/hello-nuget/releases</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/tjololo/hello-nuget</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>Demo library for testing nuget releases</Description>
+    <IsPackable>true</IsPackable>
+    <PackageTags>Demo;tjololo;no-value</PackageTags>
   </PropertyGroup>
 </Project>
