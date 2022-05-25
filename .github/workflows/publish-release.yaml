@@ -16,7 +16,6 @@ jobs:
       - name: Install dotnet6
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-install-dir: /usr/local/share/dotnet
           dotnet-install-version: 6.x.x
       - name: Install deps
         run: |
