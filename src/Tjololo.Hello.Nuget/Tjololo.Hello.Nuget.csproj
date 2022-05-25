@@ -19,4 +19,9 @@
   <ItemGroup>
     <None Include="docs/README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
+  <Target Name="MyTarget" AfterTargets="MinVer">
+    <PropertyGroup>
+      <AssemblyVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</AssemblyVersion>
+    </PropertyGroup>
+  </Target>
 </Project>
