@@ -6,12 +6,4 @@
   
       <PackProjects Include="src\**\*.csproj" />
     </ItemGroup>
-  
-    <Target Name="Build">
-      <MSBuild Projects="@(SolutionProjects)" Targets="Restore;Build" ContinueOnError="ErrorAndStop" />
-    </Target>
-  
-    <Target Name="Pack">
-      <MSBuild Projects="@(PackProjects)" Targets="Pack" ContinueOnError="ErrorAndStop" />
-    </Target>
   </Project>

@@ -2,6 +2,8 @@
     <Target Name="MyTarget" AfterTargets="MinVer">
         <PropertyGroup>
             <AssemblyVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</AssemblyVersion>
+            <Version>$(MinVerVersion)</Version>
+            <ProjectVersion>$(MinVerVersion)</ProjectVersion>
         </PropertyGroup>
     </Target>
 </Project>
