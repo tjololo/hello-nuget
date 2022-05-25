@@ -13,5 +13,10 @@
     <Description>Demo library for testing nuget releases</Description>
     <IsPackable>true</IsPackable>
     <PackageTags>Demo;tjololo;no-value</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="docs/README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
 </Project>
