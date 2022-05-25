@@ -22,7 +22,7 @@ public class Demo
     /// <summary>
     /// GetSmallestNumber - Returns the smallest number from the given list of numbers.
     /// </summary>
-    /// <param name="numbers">The list of numbers.</param>
+    /// <param name="numbers">The list of numbers</param>
     /// <returns>The smallest number.</returns>
     public int GetSmallestNumber(int[] numbers)
     {
