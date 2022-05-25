@@ -26,7 +26,7 @@ jobs:
           dotnet build --configuration Release --no-restore
       - name: Pack
         run: |
-          nuget pack -Symbols -Build -Properties Configuration Release
+          dotnet pack --configuration Release --no-build
 
       - name: Publish
         run: |
