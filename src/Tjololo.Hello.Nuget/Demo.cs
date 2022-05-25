@@ -36,4 +36,19 @@ public class Demo
         }
         return smallestNumber;
     }
+
+    /// <summary>
+    /// GetSum - Returns the sum of all numbers in the given list of numbers.
+    /// </summary>
+    /// <param name="numbers">The list of numbers.</param>
+    /// <returns>The sum of all numbers.</returns>
+    public int GetSum(int[] numbers)
+    {
+        int sum = 0;
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            sum += numbers[i];
+        }
+        return sum;
+    }
 }
