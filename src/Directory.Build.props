@@ -7,12 +7,6 @@
   <PropertyGroup>
     <MinVerMinimumMajorMinor>0.1</MinVerMinimumMajorMinor>
     <MinVerDefaultPreReleasePhase>preview</MinVerDefaultPreReleasePhase>
+    <MinVerVerbosity>d</MinVerVerbosity>
   </PropertyGroup>
-  <Target Name="VersionHack" AfterTargets="MinVer" >
-    <PropertyGroup>
-        <PackageVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch)</PackageVersion>
-        <PackageVersion Condition="'${MinVerPreRelease}' != ''">$(MinVerMajor).$(MinVerMinor).$(MinVerPatch)-$(MinVerDefaultPreReleasePhase).$(MinVerBuildMetadata)</PackageVersion>
-        <Version>$(PackageVersion)</Version>
-    </PropertyGroup>
-</Target>
 </Project>
