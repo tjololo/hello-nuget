@@ -4,6 +4,7 @@
             <AssemblyVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</AssemblyVersion>
             <Version>$(MinVerVersion)</Version>
             <ProjectVersion>$(MinVerVersion)</ProjectVersion>
+            <FileVersion>$(MinVerVersion)</FileVersion>
         </PropertyGroup>
     </Target>
 </Project>
