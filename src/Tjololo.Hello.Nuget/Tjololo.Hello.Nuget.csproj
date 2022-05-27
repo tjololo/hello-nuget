@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <None Include="docs/README.md" Pack="true" PackagePath="/" />
+    <PackageReference Include="MinVer" Version="4.0.0" PrivateAssets="All" />
   </ItemGroup>
 
   <Target Name="TestTarget" AfterTargets="MinVer">

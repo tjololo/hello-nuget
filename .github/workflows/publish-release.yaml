@@ -11,6 +11,9 @@ on:
 jobs:
   build-pack:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/Tjololo.Hello.Nuget
     steps:
       - uses: actions/checkout@v3
         with:
