@@ -3,7 +3,7 @@ name: Pack and publish nuget
 on:
   push:
     branches:
-      - mainZ
+      - main
   release:
     types:
       - published
