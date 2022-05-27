@@ -17,15 +17,9 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-install-version: 6.x.x
-      - name: Install deps
-        run: |
-          dotnet restore
-      - name: Build
-        run: |
-          dotnet build --configuration Release --no-restore
       - name: Pack
         run: |
-          dotnet pack --configuration Release --no-build
+          dotnet pack --configuration Release
 
       - name: Publish
         run: |
