@@ -28,8 +28,8 @@ jobs:
           dotnet build --configuration Release --no-restore
       - name: Pack
         run: |
-          dotnet pack --configuration Release --no-restore --no-build --include-symbols
-
+          dotnet pack --configuration Release --no-restore --no-build
+          
       - name: Publish
         run: |
           nuget setApiKey ${{ secrets.NUGET_API_KEY }} -Source https://api.nuget.org/v3/index.json
