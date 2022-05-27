@@ -1,6 +1,9 @@
 name: Pack and publish nuget
 
 on:
+  push:
+    branches:
+      - main
   release:
     types:
       - published
@@ -17,6 +20,9 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-install-version: 6.x.x
+      - name: Install deps
+        run: |
+          dotnet restore
       - name: Pack
         run: |
           dotnet pack --configuration Release
