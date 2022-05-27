@@ -20,7 +20,7 @@
     <None Include="docs/README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
 
-  <Target Name="MyTarget" AfterTargets="MinVer">
+  <Target Name="TestTarget" AfterTargets="MinVer">
     <PropertyGroup>
       <AssemblyVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</AssemblyVersion>
       <FileVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</FileVersion>
