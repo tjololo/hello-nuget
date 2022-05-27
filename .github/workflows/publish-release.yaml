@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-pack:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -29,7 +29,7 @@ jobs:
       - name: Pack
         run: |
           dotnet pack --configuration Release --no-restore --no-build
-          
+
       - name: Publish
         run: |
           nuget setApiKey ${{ secrets.NUGET_API_KEY }} -Source https://api.nuget.org/v3/index.json
