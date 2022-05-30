@@ -3,11 +3,12 @@
 
   <ItemGroup>
     <PackageReference Include="MinVer" Version="4.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="All" />
   </ItemGroup>
   <PropertyGroup>
-    <MinVerMinimumMajorMinor>0.1</MinVerMinimumMajorMinor>
     <MinVerDefaultPreReleasePhase>preview</MinVerDefaultPreReleasePhase>
     <MinVerTagPrefix>v</MinVerTagPrefix>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   
   <Target Name="AssemblyVersionTarget" AfterTargets="MinVer" Condition="'$(MinVerVersion)'!='' AND '$(BuildNumber)' != ''">
