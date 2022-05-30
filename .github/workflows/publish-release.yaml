@@ -30,6 +30,11 @@ jobs:
         run: |
           dotnet pack --configuration Release --no-restore --no-build
 
+      - name: Versions
+        run: |
+          dotnet --version
+          nuget
+
       - name: Publish
         run: |
           nuget setApiKey ${{ secrets.NUGET_API_KEY }} -Source https://api.nuget.org/v3/index.json
