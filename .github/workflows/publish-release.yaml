@@ -28,7 +28,7 @@ jobs:
           dotnet build --configuration Release --no-restore
       - name: Pack
         run: |
-          dotnet pack --configuration Release --no-restore --no-build
+          dotnet pack Hello.Nuget.proj --configuration Release --no-restore --no-build
 
       - name: Versions
         run: |

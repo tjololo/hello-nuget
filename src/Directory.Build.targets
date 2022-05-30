@@ -7,11 +7,4 @@
             <FileVersion>$(MinVerVersion)</FileVersion>
         </PropertyGroup>
     </Target> -->
-    <Target Name="TestTarget" AfterTargets="MinVer">
-        <PropertyGroup>
-          <AssemblyVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</AssemblyVersion>
-          <FileVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</FileVersion>
-          <AssemblyFileVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).0</AssemblyFileVersion>
-        </PropertyGroup>
-      </Target>
 </Project>
