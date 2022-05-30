@@ -15,7 +15,6 @@
     <PackageTags>Demo;tjololo;no-value</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <LangVersion>default</LangVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
