@@ -1,9 +1,6 @@
 name: Pack and publish nuget
 
 on:
-  push:
-    branches:
-      - main
   release:
     types:
       - published
