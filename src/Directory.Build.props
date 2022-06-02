@@ -6,9 +6,11 @@
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="All" />
   </ItemGroup>
   <PropertyGroup>
+    <RepoRoot>$([System.IO.Directory]::GetParent($(MSBuildThisFileDirectory)).Parent.FullName)</RepoRoot>
     <MinVerDefaultPreReleasePhase>preview</MinVerDefaultPreReleasePhase>
     <MinVerTagPrefix>v</MinVerTagPrefix>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <LangVersion>10.0</LangVersion>
   </PropertyGroup>
   
   <Target Name="AssemblyVersionTarget" AfterTargets="MinVer" Condition="'$(MinVerVersion)'!='' AND '$(BuildNumber)' != ''">
