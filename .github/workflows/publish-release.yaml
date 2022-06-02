@@ -28,7 +28,7 @@ jobs:
           dotnet build --configuration Release --no-restore -p:Deterministic=true -p:BuildNumber=${{ github.run_number }}
       - name: Pack
         run: |
-          dotnet pack Hello.Nuget.proj --configuration Release --no-restore --no-build
+          dotnet pack Hello.Nuget.proj --configuration Release --no-restore --no-build -p:BuildNumber=${{ github.run_number }}
 
       - name: Versions
         run: |
