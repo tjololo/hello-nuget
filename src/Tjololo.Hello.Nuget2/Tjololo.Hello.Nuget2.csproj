@@ -4,7 +4,7 @@
     <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>Tjololo.Hello.Nuget</PackageId>
+    <PackageId>Tjololo.Hello.Nuget2</PackageId>
     <Authors>tjololo</Authors>
     <OutputType>Library</OutputType>
     <PackageReleaseNotes>https://github.com/tjololo/hello-nuget/releases</PackageReleaseNotes>
